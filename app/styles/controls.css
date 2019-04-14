@@ -1,0 +1,56 @@
+.header {
+  height: 50px;
+  align-items: center;
+}
+
+.header .brand {
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.table-simple {
+  width: calc(100% - 1px);
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-simple > tbody > tr > td {
+  border: 1px solid #ccc;
+  padding: 4px 4px 10px 4px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.table-simple > tbody > tr > td.nopd {
+  padding: 0;
+}
+
+.mini-list {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.menu {
+  padding: 6px 2px;
+}
+
+.menu:hover {
+  cursor: pointer;
+  background-color: #eee;
+
+}
+
+.menu.active {
+  background-color: #eee;
+}
+
+.no-data {
+  background-color: #FFACAE;
+}
+
+.alert-data {
+  background-color: red;
+  color: white;
+}
+

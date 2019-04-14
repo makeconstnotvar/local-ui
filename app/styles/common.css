@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.root {
+  display: flex;
+  flex-grow: 1;
+}
+.root-col {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.left {
+  overflow-y: scroll;
+  flex-shrink: 0;
+
+}
+
+.right {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding-left: 15px;
+
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.ellipsis {
+  word-break: break-all;
+}
+
+.grey {
+  color: #ccc;
+}
+
+.mb3 {
+  margin-bottom: 3px;
+}
+
+.mb6 {
+  margin-bottom: 6px;
+}
