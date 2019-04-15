@@ -37,10 +37,8 @@ class File extends Component {
         return <td><MetaCell {...item}/></td>;
       case ModeEnum.array:
         return <td className="nopd"><MiniList {...item}/></td>;
-      case ModeEnum.error:
-        return <td className="no-data">-</td>;
       default:
-        throw 'неопределенный ModeEnum'
+        return <td className="no-data">-</td>;
     }
   };
 

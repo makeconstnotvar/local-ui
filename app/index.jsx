@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter, Route} from "react-router-dom";
 import {Header} from "app/header";
@@ -10,11 +10,11 @@ import {Store} from "app/store";
 const store = new Store();
 
 ReactDOM.render(
-  <Provider store = {store}>
+  <Provider store={store}>
     <BrowserRouter>
-      <div className="root-col">
+      <Fragment>
         <Header/>
-        <div className="flex-row flex-grow">
+        <div className="wrap">
           <div className="left">
             <Route path="/" component={Menu}/>
           </div>
@@ -22,7 +22,7 @@ ReactDOM.render(
             <Route path="/:file" component={File}/>
           </div>
         </div>
-      </div>
+      </Fragment>
     </BrowserRouter>
   </Provider>,
   document.getElementById("root"));

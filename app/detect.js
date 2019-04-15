@@ -7,9 +7,7 @@ function detectMode(item) {
     return ModeEnum.array;
   if (_.isObject(item))
     return ModeEnum.object;
-  if(!item)
-    return ModeEnum.error;
-  if (_.isString(item))
+  if (_.isString(item) && item !== '')
     return ModeEnum.string;
 
 }
@@ -18,7 +16,6 @@ const ModeEnum = {
   string: 'str',
   array: 'arr',
   object: 'obj',
-  metas: 'met',
-  error: 'err'
+  metas: 'met'
 };
-export {detectMode,ModeEnum}
+export {detectMode, ModeEnum}

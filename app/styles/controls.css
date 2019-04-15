@@ -1,11 +1,32 @@
 .header {
-  height: 50px;
+  display: flex;
   align-items: center;
+  height: 50px;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1px;
 }
 
-.header .brand {
+.header-brand {
+  align-items: center;
+  display: flex;
   font-size: 20px;
   padding: 0 20px;
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  height: 100%;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
 }
 
 .table-simple {

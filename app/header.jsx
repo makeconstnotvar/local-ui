@@ -6,11 +6,15 @@ import {inject, observer} from "mobx-react";
 class Header extends Component {
 
   render() {
-    return <header className="flex-row header">
-      <div className="brand">Система локализации</div>
-      <div className="flex-grow">
-        <a className="btn" target="_blank" href="/api/csv/empty.csv">Без перевода</a>
-        <input type="file" className="btn" onChange={(e) => this.props.store.upload(e.target.files)}/>
+    return <header className="header">
+      <div className="header-brand">Система локализации</div>
+      <div className="header-list">
+        <div className="header-item">
+          <a className="btn" target="_blank" href="/api/csv/empty.csv">Без перевода</a>
+        </div>
+        <div className="header-item">
+          <input type="file" className="btn" onChange={(e) => this.props.store.upload(e.target.files)}/>
+        </div>
       </div>
     </header>
   }
