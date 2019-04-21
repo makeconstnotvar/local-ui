@@ -50,13 +50,13 @@ module.exports = {
 
     ]
   },
-  optimization: {
+  /*optimization: {
     splitChunks: {
       chunks: 'all',
       name: 'libs'
     },
 
-  },
-  mode: 'development',
-  devtool: 'source-map'
+  },*/
+  mode: 'production',
+  devtool: false
 };

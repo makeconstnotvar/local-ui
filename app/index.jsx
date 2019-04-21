@@ -10,7 +10,7 @@ import {Store} from "app/store";
 const store = new Store();
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider $store={store}>
     <BrowserRouter>
       <Fragment>
         <Header/>

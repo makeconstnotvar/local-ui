@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import {inject, observer} from "mobx-react";
 
-@inject("store")
+@inject("$store")
 @observer
 class Header extends Component {
 
@@ -13,7 +13,7 @@ class Header extends Component {
           <a className="btn" target="_blank" href="/api/csv/empty.csv">Без перевода</a>
         </div>
         <div className="header-item">
-          <input type="file" className="btn" onChange={(e) => this.props.store.upload(e.target.files)}/>
+          <input type="file" className="btn" onChange={(e) => this.props.$store.upload(e.target.files)}/>
         </div>
       </div>
     </header>

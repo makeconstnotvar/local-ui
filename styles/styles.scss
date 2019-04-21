@@ -1,0 +1,63 @@
+@import "reset";
+@import "bootstrap";
+@import "awesome";
+@import "flex";
+@import "zindex";
+@import "gaps";
+@import "common";
+@import "controls";
+
+
+html {
+  font-family: "Arial", sans-serif;
+  overflow-y: scroll;
+  color: #333;
+}
+
+body {
+  margin: 0;
+}
+
+.undecorate {
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.dashed {
+  border-bottom: 1px dashed;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.unselect {
+  user-select: none;
+}
+
+
+
+
+
+.form-checkox {
+  user-select: none;
+
+  label {
+    display: flex;
+    align-items: center;
+
+  }
+
+  input[type="checkbox"] {
+    margin: 0 5px 0 0;
+  }
+}
+
+.text-mini {
+  font-size: 12px;
+}

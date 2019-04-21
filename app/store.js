@@ -1,6 +1,5 @@
 import {action, observable} from "mobx";
 import {provider} from "./provider";
-import _ from "underscore";
 import {detectMode} from "./detect";
 
 

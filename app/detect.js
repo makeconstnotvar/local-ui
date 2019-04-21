@@ -1,4 +1,4 @@
-import _ from "underscore";
+import _ from "lodash";
 
 function detectMode(item) {
   if (_.isArray(item.meta) && _.isString(item.title))

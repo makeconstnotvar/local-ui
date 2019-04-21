@@ -1,19 +1,15 @@
 html,
 body,
-.root{
+.root {
   min-height: 100vh;
   overflow: hidden;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 .root {
   display: flex;
   flex-direction: column;
 }
+
 .wrap {
   display: flex;
   flex-grow: 1;

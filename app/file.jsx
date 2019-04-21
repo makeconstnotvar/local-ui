@@ -5,7 +5,7 @@ import {MiniList} from "app/components/minilist";
 import {RawCell} from "app/components/rawcell";
 import {ModeEnum} from "./detect";
 
-@inject("store")
+@inject("$store")
 @observer
 class File extends Component {
 
@@ -20,10 +20,10 @@ class File extends Component {
   }
 
   fetch = () => {
-    let {match, store} = this.props;
-    store.getFile(match.params.file);
-    store.setCurrentFileName(match.params.file);
-    store.setSelectedLocal();
+    let {match, $store} = this.props;
+    $store.getFile(match.params.file);
+    $store.setCurrentFileName(match.params.file);
+    $store.setSelectedLocal();
   };
 
   getRow = (lang, data) => {
@@ -44,7 +44,7 @@ class File extends Component {
 
 
   render() {
-    const {file} = this.props.store;
+    const {file} = this.props.$store;
     return <table className="table-simple">
       <thead>
       <tr>

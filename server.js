@@ -8,7 +8,7 @@ const express = require('express'),
   formidable = require('formidable'),
   server = http.createServer(app),
   languages = require('./languages'),
-  _ = require('underscore'),
+  _ = require('lodash'),
   args = process.argv.slice(2).reduce((acc, textParam) => {
     let param = textParam.split('=');
     if (param.length > 0)
@@ -18,7 +18,7 @@ const express = require('express'),
 app.use(helmet());
 app.use(compression());
 app.use('/build', express.static(path.join(__dirname, 'build')));
-app.use('/styles', express.static(path.join(__dirname, 'app/styles')));
+app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 app.use('/temp', express.static(path.join(__dirname, 'temp')));
 app.use('/api/locals', (req, res) => {
   let result = {};
